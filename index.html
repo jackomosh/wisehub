@@ -4,23 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to Web Design</title>
+    <link rel="icon" href="./img/wiselogo.png">
+    <link rel="stylesheet" href="./stylesheet/style.css">
 </head>
 <body>
     <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Quos excepturi ut ratione corporis, minima at praesentium commodi, <br> asperiores quia dolores accusamus vel facere esse a illo reprehenderit natus molestiae itaque?</p>
-    <a href="contact.html" title="Contact">Contact</a><br>
-    <img src="download.jpg">
-    <p>Ordered</p>
+    <p id="mainp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Quos excepturi ut ratione corporis, minima at praesentium commodi, <br> asperiores quia dolores accusamus vel facere esse a illo reprehenderit natus molestiae itaque?</p>
+    <a href="./contact-us/contact.html" title="Contact">Contact</a><br>
+    <img src="./img/download.jpg">
+    <p id="Ordered">Ordered</p>
     <ol>
         <li>Number 1</li>
         <li>Number 2</li>
         <li>Number 3</li>
     </ol>
-    <p>Unordered</p>
+    <p id="Unordered">Unordered</p>
     <ul>
         <li>Point 1</li>
         <li>Point 2</li>
         <li>Point 3</li>
     </ul>
+
+    <form>
+
+        <label>Name</label>
+        <div>
+            <input placeholder="Enter Your Name" type="radio" required>
+        </div>
+
+        <label>Country</label>
+        <div>
+            <select>
+                <option>Kenya</option>
+                <option>Uganda</option>
+                <option>Tanzania</option>
+                <option>Rwanda</option>
+                <option>Nigeria</option>
+            </select>
+        </div>
+
+        <div>
+            <input placeholder="Email Address" type="email" required>
+        </div>
+        
+        <div>
+            <input placeholder="Subject" type="text" required>
+        </div>
+
+        <div>
+            <input placeholder="Enter Phone Number" type="number" required>
+        </div>
+
+        <div>
+            <textarea placeholder="Write a Message" required></textarea>
+        </div>
+
+        <input type="checkbox" checked> Accept terms & conditions <br><br>
+
+        <input type="submit" value="Send">
+    </form><br><br>
+
+    <table border="" class="table">
+        <tr>
+            <th>Full name</th>
+            <th>Age</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>19</td>
+            <td>0123</td>
+        </tr>
+        <tr>
+            <td>Leah</td>
+            <td>19</td>
+            <td>0123</td>
+        </tr>
+        <tr>
+            <td>Vivian</td>
+            <td>19</td>
+            <td>0123</td>
+        </tr>
+        <tr>
+            <td>Lorine</td>
+            <td>19</td>
+            <td>0123</td>
+        </tr>
+    </table>
+
+    <ol>
+        <li class="veg">Spinach</li>
+        <li class="meat">Chicken</li>
+        <li>Pasta</li>
+        <li class="veg">Carrot</li>
+        <li class="veg">Pepper</li>
+        <li class="meat">Fish</li>
+        <li class="meat">Beef</li>
+    </ol>
+
+    <div id="box">Hello Box Model</div>
+
 </body>
 </html>

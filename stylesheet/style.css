@@ -1,0 +1,60 @@
+h1 {
+    color: red;
+}
+
+ol li {
+    list-style: none;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+#bruno {
+    background-color: red;
+    color: green;
+}
+
+#leah {
+    background-color: aqua;
+}
+
+#Unordered {
+    color: blue;
+}
+
+#Ordered {
+    color: red;
+}
+
+#veg {
+    color: green;
+}
+
+.veg {
+    color: lightgreen;
+}
+
+.meat {
+    color: red;
+}
+
+.table{
+    background-color: yellow;
+}
+
+#mainp {
+    font-size: 20px;
+    text-decoration: line-through;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 300;
+}
+
+
+.kapakana {
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
