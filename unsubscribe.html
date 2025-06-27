@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribe from Our List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            text-align: left;
+            font-weight: bold;
+        }
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #dc3545; /* Red for unsubscribe action */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #c82333;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green; /* For success messages */
+        }
+        .error {
+            color: red; /* For error messages */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Unsubscribe from Our Email List</h2>
+        <p>Please enter your email address below to unsubscribe from our mailing list. You will be removed manually within 24-48 hours.</p>
+
+        <form action="process_unsubscribe.php" method="POST">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            <button type="submit">Unsubscribe Me</button>
+        </form>
+
+        <?php
+            // This PHP block is for displaying messages after redirection
+            // It will only execute if the server supports PHP for .html files
+            // or if you rename this file to unsubscribe.php
+            if (isset($_GET['status'])) {
+                if ($_GET['status'] == 'success') {
+                    echo '<p class="message">Your unsubscribe request has been received. You will be removed from our list shortly.</p>';
+                } elseif ($_GET['status'] == 'error') {
+                    echo '<p class="message error">There was an error processing your request. Please try again or contact us directly.</p>';
+                } elseif ($_GET['status'] == 'invalid') {
+                    echo '<p class="message error">Please enter a valid email address.</p>';
+                }
+            }
+        ?>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribe</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .container { max-width: 600px; margin: auto; background-color: #f9f9f9; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        a.button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Unsubscribe from Our Email List</h2>
+        <p>To unsubscribe, please click the button below. This will open your email client with a pre-filled request. Simply click "Send" to complete your request.</p>
+        <p>We will manually remove your email address from our list within 24-48 hours.</p>
+
+        <a href="mailto:jackomosh6@gmail.com?subject=Unsubscribe%20Request&body=Please%20unsubscribe%20my%20email%20address%20from%20your%20mailing%20list.%0D%0A%0D%0AMy%20email%20address%20is:%20" class="button">Unsubscribe Me</a>
+
+        <p style="margin-top: 30px;">Alternatively, you can manually send an email to: <a href="mailto:your_email@example.com">your_email@example.com</a> with the subject "Unsubscribe".</p>
+    </div>
+</body>
+</html>

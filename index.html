@@ -6,14 +6,27 @@
     <title>Intro to Web Design</title>
     <link rel="icon" href="./img/wiselogo.png">
     <link rel="stylesheet" href="./stylesheet/style.css">
+    <script rel="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script rel="text/javascript" src=""></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    
+    <div class="nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Pages</li>
+        <li>Contact</li>
+    </div>
+
+
     <p id="mainp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Quos excepturi ut ratione corporis, minima at praesentium commodi, <br> asperiores quia dolores accusamus vel facere esse a illo reprehenderit natus molestiae itaque?</p>
-    <a href="./contact-us/contact.html" title="Contact">Contact</a><br>
+    <a id="anchor" href="./contact-us/contact.html" title="Contact">Contact</a><br>
     <img src="./img/download.jpg">
     <p id="Ordered">Ordered</p>
-    <ol>
+
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusantium! Vel consequatur facere perferendis eligendi, illo pariatur. Dicta optio facilis quasi eos at iure rerum rem neque. Numquam, sint eos.</p>
+    
+    <ol class="ol">
         <li>Number 1</li>
         <li>Number 2</li>
         <li>Number 3</li>
@@ -64,18 +77,18 @@
         <input type="submit" value="Send">
     </form><br><br>
 
-    <table border="" class="table">
+    <table border="">
         <tr>
             <th>Full name</th>
             <th>Age</th>
             <th>Phone</th>
         </tr>
-        <tr>
+        <tr id="bruno">
             <td>Bruno</td>
             <td>19</td>
             <td>0123</td>
         </tr>
-        <tr>
+        <tr id="leah">
             <td>Leah</td>
             <td>19</td>
             <td>0123</td>
@@ -102,7 +115,8 @@
         <li class="meat">Beef</li>
     </ol>
 
-    <div id="box">Hello Box Model</div>
+    <div id="box1">Hello Box Model</div>
+    <div id="box2">Hello Box Model</div>
 
 </body>
 </html>
